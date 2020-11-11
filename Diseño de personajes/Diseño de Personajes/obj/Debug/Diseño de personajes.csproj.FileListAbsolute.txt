@@ -1,0 +1,10 @@
+C:\Users\Usuario\source\repos\Diseño de personajes\Diseño de personajes\bin\Debug\Diseño de personajes.exe.config
+C:\Users\Usuario\source\repos\Diseño de personajes\Diseño de personajes\bin\Debug\Diseño de personajes.exe
+C:\Users\Usuario\source\repos\Diseño de personajes\Diseño de personajes\bin\Debug\Diseño de personajes.pdb
+C:\Users\Usuario\source\repos\Diseño de personajes\Diseño de personajes\obj\Debug\Diseño de personajes.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\Diseño de personajes\Diseño de personajes\obj\Debug\Diseño_de_personajes.Form1.resources
+C:\Users\Usuario\source\repos\Diseño de personajes\Diseño de personajes\obj\Debug\Diseño_de_personajes.Properties.Resources.resources
+C:\Users\Usuario\source\repos\Diseño de personajes\Diseño de personajes\obj\Debug\Diseño de personajes.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\Diseño de personajes\Diseño de personajes\obj\Debug\Diseño de personajes.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\Diseño de personajes\Diseño de personajes\obj\Debug\Diseño de personajes.exe
+C:\Users\Usuario\source\repos\Diseño de personajes\Diseño de personajes\obj\Debug\Diseño de personajes.pdb

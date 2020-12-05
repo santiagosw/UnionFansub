@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{97859FC3-9454-4B71-8812-4F8C9AAC2209}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FE</RootNamespace>
+    <AssemblyName>Union Fansub</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Usuario\Desktop\UnionFansub\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D2598205373943B1747BA8E51484905066C214CC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FE_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.13.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.13.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Siticone.UI">
+      <HintPath>..\..\..\..\Siticone.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChildForms\Exit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Exit.Designer.cs">
+      <DependentUpon>Exit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\FormForgetPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\FormForgetPass.Designer.cs">
+      <DependentUpon>FormForgetPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\FormLogError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\FormLogError.Designer.cs">
+      <DependentUpon>FormLogError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\FormMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\FormMainMenu.Designer.cs">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Manga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Manga.Designer.cs">
+      <DependentUpon>Manga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Premium.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Premium.Designer.cs">
+      <DependentUpon>Premium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForms\Anime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForms\Anime.Designer.cs">
+      <DependentUpon>Anime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\FormRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\FormRegister.Designer.cs">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChildForms\Exit.resx">
+      <DependentUpon>Exit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Manga.resx">
+      <DependentUpon>Manga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Premium.resx">
+      <DependentUpon>Premium.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\FormForgetPass.resx">
+      <DependentUpon>FormForgetPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\FormLogError.resx">
+      <DependentUpon>FormLogError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\FormMainMenu.resx">
+      <DependentUpon>FormMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\FormRegister.resx">
+      <DependentUpon>FormRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForms\Anime.resx">
+      <DependentUpon>Anime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="FE_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\serie6.jpg" />
+    <None Include="Resources\slider31.png" />
+    <None Include="Resources\slider12.png" />
+    <None Include="Resources\slider21.png" />
+    <None Include="Resources\slider41.png" />
+    <None Include="Resources\slider5.png" />
+    <None Include="Resources\tenor %286%29.gif" />
+    <EmbeddedResource Include="Resources\Fonts\Oswald-Regular.ttf" />
+    <None Include="Resources\toro.wav" />
+    <None Include="Resources\manga4.jpg" />
+    <None Include="Resources\manga3.jpg" />
+    <None Include="Resources\manga2.jpg" />
+    <None Include="Resources\manga1.jpg" />
+    <None Include="Resources\icoCrunchy.png" />
+    <None Include="Resources\icoAF.png" />
+    <None Include="Resources\giferrorreg.gif" />
+    <None Include="Resources\gifRegister.gif" />
+    <None Include="Resources\gifLogin.gif" />
+    <None Include="Resources\icoGitHub.png" />
+    <Content Include="app.ico" />
+    <None Include="Resources\icons8-stop-circled-48.png" />
+    <None Include="Resources\icons8-circled-play-48.png" />
+    <None Include="Resources\icons8-sort-right-96.png" />
+    <None Include="Resources\icons8-sort-left-96.png" />
+    <None Include="Resources\icoForo.png" />
+    <None Include="Resources\bgHome.png" />
+    <None Include="Resources\icons8-sort-right-961.png" />
+    <None Include="Resources\icons8-sort-left-961.png" />
+    <None Include="Resources\frameAnimes.png" />
+    <None Include="Resources\kisspng-room-gradient-hotel-oradea-border-lights-5b16066a5e30e3.7659446315281700903858.png" />
+    <None Include="Resources\large.jpg" />
+    <None Include="Resources\serie11.jpg" />
+    <None Include="Resources\manga5.jpg" />
+    <None Include="Resources\manga6.jpg" />
+    <None Include="Resources\manga7.jpg" />
+    <None Include="Resources\manga8.jpg" />
+    <None Include="Resources\bgHome1.png" />
+    <None Include="Resources\gfBye.gif" />
+    <None Include="Resources\Premium BG.gif" />
+    <None Include="Resources\96d.gif" />
+    <None Include="Resources\bgPremium2.gif" />
+    <None Include="Resources\gfPremium.gif" />
+    <Content Include="Resources\serie2.jpg" />
+    <None Include="Resources\serie21.jpg" />
+    <None Include="Resources\serie22.jpg" />
+    <Content Include="Resources\serie3.jpg" />
+    <None Include="Resources\serie4.jpg" />
+    <Content Include="Resources\serie4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE\BE.csproj">
+      <Project>{5ee678b2-fd60-46ec-9b40-f123c6104efc}</Project>
+      <Name>BE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
